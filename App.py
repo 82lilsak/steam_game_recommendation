@@ -16,7 +16,6 @@ from konlpy.tag import Okt
 from PyQt5.QtGui import QPixmap,QImage
 
 
-
 form_window = uic.loadUiType('./steam_game_recommendation.ui')[0]
 
 class Exam(QWidget, form_window):

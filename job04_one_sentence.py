@@ -18,3 +18,4 @@ df_one = pd.DataFrame({'titles':df['title'].unique(), 'reviews':one_sentences})
 print(df_one.head())
 df_one.info()
 df_one.to_csv('./crawling_data/cleaned_one_review.csv', index=False)
+

@@ -17,3 +17,4 @@ df.drop_duplicates(inplace=True)
 df.info()
 
 df.to_csv('./crawling_data/steam_review_{}.csv'.format(datetime.datetime.now().strftime('%Y%m%d')), index=False)
+

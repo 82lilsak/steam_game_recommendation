@@ -265,3 +265,4 @@ for url in urls:
         df_steam = pd.DataFrame({'title':title, 'review':review})
         df_steam.to_csv('./crawling_data/steam_{}_{}.csv'.format(page, game_title), index=False)
 
+

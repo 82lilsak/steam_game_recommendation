@@ -14,6 +14,6 @@ for i in range(len(no_save)):
 
 기존의 타이틀
 Marvel’sSpider - Man: MilesMorales
-특수문자 제거를 한 타이틀
+특수 문자 제거를 한 타이틀
 Marvel sSpider   Man  MilesMorales
-
+이런 방식 으로 특수 문자를 제거 하여 영문만 남게 수정 합니다.
