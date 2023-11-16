@@ -1,0 +1,19 @@
+문제점.
+크롤링을 한 이후에 파일을 csv 파일로 저장할 때
+df_steam.to_csv('./crawling_data/steam_{}_{}.csv'.format(page, game_title), index=False)
+.csv의 앞에 game_title에 : , - 와 같은 특수문자가 들어가면 저장이 정상적으로 되지 않는 문제가 발생.
+
+해결방안.
+title = 'Marvel’sSpider - Man: MilesMorales'
+
+no_save = ['/', ':', '-', '*', '@', '#', '$', '%', '^', '&', '(', ')', '{', '}', '[', ']', '<', '>', '?', '\\', '"',
+           "'", '=', '|', ',', '.', '`', '~', '+', '’']
+
+for i in range(len(no_save)):
+    title = title.replace(no_save[i], ' ')
+
+기존의 타이틀
+Marvel’sSpider - Man: MilesMorales
+특수문자 제거를 한 타이틀
+Marvel sSpider   Man  MilesMorales
+
